@@ -3,9 +3,9 @@ from demo_streamlit import get_images_from_query
 
 
 # Create a Streamlit widget for inputting vectors
-st.title("ImageSearch Demo")
+st.title("ImageMagnet Demo")
 
-query = st.text_input("What are you looking for?")
+query = st.text_input("What are you looking for in your dream house?")
 num_results = st.slider("Number of results to display", min_value=1, max_value=472, value=5)
 
 if query:   
