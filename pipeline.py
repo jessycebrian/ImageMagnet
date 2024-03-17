@@ -37,6 +37,6 @@ logging.info('Evaluating ImageMagnet ...')
 # initialise evaluator
 evaluator = ImageNetEvaluator(df)
 top_k=5
-logging.info(f"MRR@{top_k}is {evaluator.get_mrr(top_k = top_k)}")
+logging.info(f"MRR@{top_k} is {evaluator.get_mrr(top_k = top_k)}")
 
 
