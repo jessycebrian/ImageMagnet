@@ -1,0 +1,1 @@
+from data2vdb.data2vdb import CLIP2Vdb

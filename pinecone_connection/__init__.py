@@ -1,4 +1,6 @@
-import os
+import logging 
+
+
 from pinecone import Pinecone
 import streamlit as st
 
@@ -10,3 +12,5 @@ pc = Pinecone(
         api_key = API_KEY
     )
 right_index = pc.Index(index_name = INDEX_NAME, host = HOST)
+
+logging.info(f'Conected to Pinecone index: {right_index.describe_index_stats}')
